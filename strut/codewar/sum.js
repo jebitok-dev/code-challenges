@@ -27,4 +27,14 @@ function squareSum(numbers){
     }, 0)
   }
   
-  
+  //finding odd numbers
+  function findOdd(A) {
+    //happy coding!
+    let result = [];
+    for (i = 0; i > A.length; i++){
+    if (A[i] % 2 === 1) {
+    result.push(A[i]);
+    }
+    }
+    return result;
+  }  
