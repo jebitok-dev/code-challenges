@@ -9,3 +9,6 @@ function editInPlace() {
   // Only change code above this line
 }
 console.log(editInPlace());
+
+/*Object.freeze to prevent mathematical constants from changing. 
+You need to freeze the MATH_CONSTANTS */
