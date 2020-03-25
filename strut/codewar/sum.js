@@ -29,12 +29,17 @@ function squareSum(numbers){
   
   //finding odd numbers
   function findOdd(A) {
-    //happy coding!
-    let result = [];
-    for (i = 0; i > A.length; i++){
-    if (A[i] % 2 === 1) {
-    result.push(A[i]);
+    for (var i = 0; i < A.length; i++) {
+      var count = 0;
+      for (var j = 0; j < A.length; j++) {
+        if (A[i] === A[j]) {
+          count++
+        }
+      }
+      if (count % 2 !== 0) {
+        return A[i];
+      }
     }
-    }
-    return result;
-  }  
+  }
+  
+  findOdd([2,5,7,3,7,5,2,2,3]); 
