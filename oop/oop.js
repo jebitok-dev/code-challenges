@@ -118,4 +118,14 @@ function steamrollArray(arr) {
 
 steamrollArray([1, [2], [3, [[4]]]]);
 
+function truthCheck(collection, pre) {
+  for (var obj of arguments[0]) {
+    if(!obj[arguments[1]]) {
+      return false
+    }
+  }
+  return true;
+}
+
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
 
